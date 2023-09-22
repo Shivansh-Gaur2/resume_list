@@ -4,6 +4,7 @@ import classes from './UserList.module.css'
 
 const UserList = (props) => {
   return (
+    <>
     <ul>
       {props.users.map((user) => (
         <User className = {classes.container}
@@ -14,6 +15,7 @@ const UserList = (props) => {
         />
       ))}
     </ul>
+    </>
   );
 };
 
