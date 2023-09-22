@@ -1,5 +1,6 @@
 import React from 'react'
 import UserList from './UserList';
+import './App.css'
 
 const userList = [
   { img_url: "https://cdn1.workadvantage.in/images/img/image/856254/ccef4b0dfc.jpeg", name: "Gabe Lewis", department: "Frontend", dob: "25/04/1998", }, 
@@ -9,7 +10,9 @@ const userList = [
 ];
 const App = () => {
   return (
-    <UserList users = {userList}/>
+    <div className='list'> 
+      <UserList users = {userList}/>
+    </div>
   )
 }
 
