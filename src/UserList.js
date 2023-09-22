@@ -5,7 +5,7 @@ import classes from './UserList.module.css'
 const UserList = (props) => {
   return (
     <>
-    <ul>
+    <ul className= {classes.list}>
       {props.users.map((user) => (
         <User className = {classes.container}
           name={user.name}
